@@ -1,0 +1,172 @@
+package com.iconsoft.afroeats.GestionCommande.DTO;
+
+import com.iconsoft.afroeats.GestionCommande.Models.Adresse;
+import com.iconsoft.afroeats.GestionPanier.Models.Panieritem;
+import com.iconsoft.afroeats.GestionUtilisateurs.Models.ClientAfro;
+import java.util.Date;
+import java.util.List;
+
+public class CommandeDTO {
+    private String typeaction; //initie  accept  reject  livre
+    private Long idcommande;
+    private String referencecommande;
+    private double montantcommande;
+    private String statut;
+    private Date datecommande;
+    private String modecommande;
+    private double fraislivraison;
+    private double montantttc;
+    private double montantht;
+    private double montanttva;
+    private double netapayer;
+    private ClientAfro client;
+    private String nomclient;
+    private String referenceclient;
+    private List<Panieritem> panieritems;
+    private Adresse adresse;
+    private Date updateat;
+
+    public String getTypeaction() {
+        return typeaction;
+    }
+
+    public void setTypeaction(String typeaction) {
+        this.typeaction = typeaction;
+    }
+
+    public Long getIdcommande() {
+        return idcommande;
+    }
+
+    public void setIdcommande(Long idcommande) {
+        this.idcommande = idcommande;
+    }
+
+    public String getReferencecommande() {
+        return referencecommande;
+    }
+
+    public void setReferencecommande(String referencecommande) {
+        this.referencecommande = referencecommande;
+    }
+
+    public double getMontantcommande() {
+        return montantcommande;
+    }
+
+    public void setMontantcommande(double montantcommande) {
+        this.montantcommande = montantcommande;
+    }
+
+    public String getStatut() {
+        return statut;
+    }
+
+    public void setStatut(String statut) {
+        this.statut = statut;
+    }
+
+    public Date getDatecommande() {
+        return datecommande;
+    }
+
+    public void setDatecommande(Date datecommande) {
+        this.datecommande = datecommande;
+    }
+
+    public String getModecommande() {
+        return modecommande;
+    }
+
+    public void setModecommande(String modecommande) {
+        this.modecommande = modecommande;
+    }
+
+    public double getFraislivraison() {
+        return fraislivraison;
+    }
+
+    public void setFraislivraison(double fraislivraison) {
+        this.fraislivraison = fraislivraison;
+    }
+
+    public double getMontantttc() {
+        return montantttc;
+    }
+
+    public void setMontantttc(double montantttc) {
+        this.montantttc = montantttc;
+    }
+
+    public double getMontantht() {
+        return montantht;
+    }
+
+    public void setMontantht(double montantht) {
+        this.montantht = montantht;
+    }
+
+    public double getMontanttva() {
+        return montanttva;
+    }
+
+    public void setMontanttva(double montanttva) {
+        this.montanttva = montanttva;
+    }
+
+    public double getNetapayer() {
+        return netapayer;
+    }
+
+    public void setNetapayer(double netapayer) {
+        this.netapayer = netapayer;
+    }
+
+    public ClientAfro getClient() {
+        return client;
+    }
+
+    public void setClient(ClientAfro client) {
+        this.client = client;
+    }
+
+    public String getNomclient() {
+        return nomclient;
+    }
+
+    public void setNomclient(String nomclient) {
+        this.nomclient = nomclient;
+    }
+
+    public List<Panieritem> getPanieritems() {
+        return panieritems;
+    }
+
+    public void setPanieritems(List<Panieritem> panieritems) {
+        this.panieritems = panieritems;
+    }
+
+    public Adresse getAdresse() {
+        return adresse;
+    }
+
+    public void setAdresse(Adresse adresse) {
+        this.adresse = adresse;
+    }
+
+    public String getReferenceclient() {
+        return referenceclient;
+    }
+
+    public void setReferenceclient(String referenceclient) {
+        this.referenceclient = referenceclient;
+    }
+
+    public Date getUpdateat() {
+        return updateat;
+    }
+
+    public void setUpdateat(Date updateat) {
+        this.updateat = updateat;
+    }
+}
