@@ -15,7 +15,9 @@
 	<description>Afroeats Backend</description>
 	<properties>
 		<java.version>8</java.version>
-		<sonar.organization>iconafrica</sonar.organization>
+	</properties>
+	<properties>
+  		<sonar.organization>iconafrica</sonar.organization>
   		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 	<dependencies>
